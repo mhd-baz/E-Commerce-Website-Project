@@ -1,0 +1,162 @@
+*{margin:0;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: arial, sans-serif;
+}
+
+/*Pour bien départager les éléments de la page*/
+
+body {
+  display: grid;
+  grid-template:
+    "header  header  header" auto
+    "sidebar     main    main" 1fr
+    "footer  footer  footer" auto /
+     15%    1fr    1fr;
+}
+
+/*Partie du Header*/
+
+header{
+    grid-area: header;
+    text-align: center;
+    background: lightblue;
+    display: grid;
+    grid-template:
+    "logo  title  connexion" 1fr
+    "logo  ...  connexion" 1fr
+    "logo  nav  nav" auto /
+     auto  1fr 100px;
+}
+
+        #logo {grid-area: logo;}
+
+        #title {grid-area: title;}
+
+        nav {grid-area: nav;}
+
+                nav li {
+                    display: inline;
+                }
+
+                nav a:link, nav a:visited {
+                    color: black;
+                    background: lightblue;
+                    font-style: oblique;
+                    text-decoration: None;
+                    padding: 0px 40px 0px 40px;
+                    border-right: 3px solid blue;
+                }
+                
+                nav a:hover {
+                    background-color:lightgray;
+                }
+
+                #acceuil a:link, #acceuil a:visited {
+                    border-left: 3px solid blue;
+                }
+
+/*#connexion a:link, #connexion a:visited {
+    grid-area: connexion;
+    text-align: center;
+    color: darkblue;
+    text-decoration: None;
+    padding: 0px 40px 0px 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}*/
+
+#connexion li {
+    list-style: none !important;
+    color: #FFF;
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#connexion ul {
+    background-color: #64abfb;
+    padding: 0;
+    margin: 0;
+}
+
+#connexion ul li {
+    list-style:none;
+    line-height: 14px;
+    background-color: #64abfb;
+}
+
+#connexion ul li a {
+    color: #FFF;
+    padding: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#connexion li a:hover {
+    font-style:italic;
+    color:black
+}
+
+#connexion ul li ul {
+    display: none;
+    color: lightblue; /* même couleur que le header poru cacher un défaut d'affichage*/
+}
+
+/* Rend le menu déroulant caché par défaut */
+#connexion ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+    display: list-item !important;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -5px;
+    font-size: 10px;
+
+}
+#connexion ul li:hover ul li {
+    float: none;
+}
+
+#connexion li:hover {
+    color: black;
+}
+
+
+/*Partie du Aside*/
+aside {
+    text-align: center;
+    grid-area: sidebar;
+    color: black;
+    background: steelblue;
+    text-decoration: None;
+}
+
+        #asideList li {
+            text-align: left;
+            list-style: none;
+        }
+        aside a {
+            color: white
+        }
+hr {
+    height: 1px;
+    color: black;
+    background-color: black;
+    border: 0;
+}
+
+/* Partie du Main*/
+
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+/*Partie du footer*/
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    background: lightblue;
+}

@@ -1,0 +1,64 @@
+#test {
+	padding: 20px;
+	background: steelblue;
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+	#test h1 {
+		font-size: 1.5em;
+		margin: 0;
+		color: white;
+	}
+
+	#test h2 {
+		text-align:left;
+		font-size: 1.3em;
+		margin: 0;
+		color: white;
+	}
+
+	#test h3 {
+		text-align: left;
+		font-size: 1em;
+		margin: 0;
+		color: antiquewhite;
+	}
+
+
+#test table input {
+	padding: 10px;
+	width: 270%;
+}
+
+	#test input[type=submit], #test input[type=button] {
+		padding: 10px;
+		background: #64abfb;
+		color: white;
+		border: 0;
+		cursor: pointer;
+	}
+
+#modification-failed, #modification-medium, #modification-success {
+	padding: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#modification-failed {
+	background: #ffe7e7;
+	border: 1px solid #ff3e3e;
+	color: #c10000;
+}
+
+#modification-medium {
+	background: black;
+	border: 1px solid #0187FC;
+	color: #0170D1;
+}
+
+#modification-success {
+	background: #AFDAFF;
+	border: 1px solid #0187FC;
+	color: #0170D1;
+}

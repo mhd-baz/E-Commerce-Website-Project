@@ -1,0 +1,16 @@
+/*Partie Propre au nav de la page HTML index*/
+
+#acceuil a:link, #acceuil a:visited {
+    color: white;
+    background: black;
+}
+#connected {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: #AFDAFF;
+    border: 1px solid #0187FC;
+    color: #0170D1;
+}
+
+/*Partie Propre au nav de la page HTML index*/

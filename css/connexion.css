@@ -1,0 +1,51 @@
+﻿
+#login-form {
+    padding: 20px;
+    background: #f2f2f2;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+    #login-form h1 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #9b9b8d;
+    }
+
+    #login-form label, #login-form input { 
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #login-form input {
+        padding: 10px;
+    }
+
+        #login-form input[type=submit] {
+            background: steelblue;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+
+/* (C) INVALID LOGIN */
+#bad-login, #bad-inscription, #good-inscription {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#bad-login, #bad-inscription {
+    background: #ffe7e7;
+    border: 1px solid #ff3e3e;
+    color: #c10000;
+}
+
+#good-inscription {
+    background: #AFDAFF;
+    border: 1px solid #0187FC;
+    color: #0170D1;
+}
+

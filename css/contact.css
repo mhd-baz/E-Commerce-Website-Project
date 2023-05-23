@@ -1,0 +1,84 @@
+/*Partie Propre au nav de la page HTML index*/
+
+#contact a:link, #contact a:visited {
+    color: white;
+    background: black;
+}
+
+/*Partie Propre au nav de la page HTML index*/
+
+#formulaireContact {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 40%;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 23.5%;
+  text-align: right;
+}
+
+#formulaireContact input, #formulaireContact textarea {
+  /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+  font: 1em sans-serif;
+  /* Pour que tous les champs texte aient la même dimension */
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+}
+
+.button {
+  /* Pour placer le bouton à la même position que les champs texte */
+  padding-left: 20%; /* même taille que les étiquettes */
+}
+
+button {
+  /* Cette marge supplémentaire représente grosso modo le même espace que celui
+     entre les étiquettes et les champs texte */
+  margin-left: .5em;
+}
+
+.style input, .style textarea, .style select {width:70%}
+
+#mail-failed, #contact-failed, #mail-sended {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#mail-failed, #contact-failed {
+    background: #ffe7e7;
+    border: 1px solid #ff3e3e;
+    color: #c10000;
+}
+
+#mail-sended {
+    background: #AFDAFF;
+    border: 1px solid #0187FC;
+    color: #0170D1;
+}

@@ -1,0 +1,56 @@
+/*Partie Propre au nav de la page HTML index*/
+
+table {
+	margin: 0 auto;
+	text-align: center;
+}
+
+table, th, td {
+	padding: 10px;
+	border: 3px solid black;
+	border-collapse: collapse;
+	border-color: black;
+}
+
+	table img:hover {
+		-webkit-transform: scale(1.5); /* Safari et Chrome */
+		-moz-transform: scale(1.5); /* Firefox */
+		-ms-transform: scale(1.5); /* Internet Explorer 9 */
+		-o-transform: scale(1.5); /* Opera */
+		transform: scale(1.5);
+	}
+
+.stock {
+	display: none;
+}
+
+#ajout-failed, #ajout-success, #ajout-medium, #succes-commande {
+	padding: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#ajout-failed {
+	background: #ffe7e7;
+	border: 1px solid #ff3e3e;
+	color: #c10000;
+}
+
+#ajout-success {
+	background: #AFDAFF;
+	border: 1px solid #0187FC;
+	color: #0170D1;
+}
+
+#ajout-medium {
+	background: black;
+	border: 1px solid #0187FC;
+	color: #0170D1;
+}
+
+#succes-commande {
+	visibility: hidden;
+	background: #AFDAFF;
+	border: 1px solid #0187FC;
+	color: #0170D1;
+}
